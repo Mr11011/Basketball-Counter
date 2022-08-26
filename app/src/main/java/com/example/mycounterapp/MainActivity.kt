@@ -77,7 +77,8 @@ class MainActivity : AppCompatActivity() {
         resetbutton.setOnClickListener {
             score2.text= 0.toString()
             score1.text= 0.toString()
-
+            counter1=0
+            counter2=0
         }
     }
 }
