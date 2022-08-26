@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/basket2">
+
+    <TextView
+        android:id="@+id/teamA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="25dp"
+        android:shadowColor="@color/white"
+        android:padding="20dp"
+        android:text="Team A"
+        android:textColor="#FBC02D"
+        android:textSize="30dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/score_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/teamA"
+        android:layout_marginLeft="65dp"
+        android:text="0"
+        android:textSize="55dp"
+        android:textColor="@color/white"
+
+        />
+
+    <Button
+        android:id="@+id/ButtonA3"
+        android:layout_width="160dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/score_a"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="45dp"
+        android:text="+3 Points"
+        android:textSize="18dp"
+
+        />
+
+    <Button
+        android:id="@+id/ButtonA2"
+        android:layout_width="160dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/ButtonA3"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="45dp"
+        android:text="+2 Points"
+        android:textSize="18dp"
+
+        />
+
+    <Button
+        android:id="@+id/ButtonF_A"
+        android:layout_width="160dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/ButtonA2"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="45dp"
+        android:text="+1 point"
+        android:textSize="18dp"
+
+        />
+
+    <!--this is the second team code-->
+
+    <TextView
+        android:id="@+id/teamB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp"
+        android:padding="20dp"
+        android:text="Team B "
+        android:textColor="#D32F2F"
+        android:textSize="30dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/score_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/teamB"
+        android:layout_marginLeft="274dp"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="55dp"
+
+        />
+
+    <Button
+        android:id="@+id/ButtonB3"
+        android:layout_width="160dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/score_b"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/ButtonA3"
+        android:text="+3 Points"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/ButtonB2"
+        android:layout_width="160dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/ButtonB3"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="45dp"
+        android:layout_toRightOf="@+id/ButtonA2"
+        android:text="+2 Points"
+        android:textSize="18dp"
+        android:layout_marginRight="10dp"
+
+        />
+
+    <Button
+        android:id="@+id/ButtonFB3"
+        android:layout_width="160dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/ButtonB2"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="45dp"
+        android:layout_toRightOf="@+id/ButtonF_A"
+        android:text="+1 Point"
+        android:textSize="18dp"
+        android:layout_marginRight="10dp"
+
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ButtonFB3"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="186dp"
+        android:background="#1976D2"
+        android:shadowColor="@color/black"
+        android:text="Reset"
+        android:textStyle="bold"
+
+        />
+
+</RelativeLayout>
